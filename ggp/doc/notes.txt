@@ -1,0 +1,16 @@
+//31.03.05
+// <shapes> visible ici
+class MyModel extends AbstractTableModel{
+	public int getColumnCount(){return 8;}
+	public String getColumnName(int col){
+		switch(col){ case 0: return "type"; case 1: ....}
+		/*
+		type  x  y  w  h  width  color  depth
+		----  ----------   ---    ---    ---
+		rect	double	  double color   int
+		ellipse
+		*/
+	public int getRowCount(){ return shapes.size(); }
+	
+	
+	
