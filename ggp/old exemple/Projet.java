@@ -30,31 +30,7 @@ public class Projet extends JPanel
         treePane = new DynamicTree("IUP");
 	htmlPane = new JEditorPane();
         treePane.tree.addTreeSelectionListener(select);
-	/*
-	treePane.tree.addTreeSelectionListener(new TreeSelectionListener() {
-           public void valueChanged(TreeSelectionEvent e) {
-	       //DefaultMutableTreeNode node = (DefaultMutableTreeNode)
-	       Node node = (Node)
-		   treePane.tree.getLastSelectedPathComponent();
-	       
-	       if (node == null) return;
-	       
-                Object nodeInfo = node.getUserObject();
-                //if (node.isLeaf()) {
-		Node book = (Node)nodeInfo;
-		displayURL(book.bookURL);
-		if (DEBUG) {
-		    System.out.print(book.bookURL + ":  \n    ");
-                   }
-                //} else {
-                //    displayURL(helpURL); 
-                //}
-                if (DEBUG) {
-                    System.out.println(nodeInfo.toString());
-                }
-	   }
-	    });
-	*/
+	
 	
 	
 	populateTree(treePane);
@@ -260,29 +236,7 @@ public class Projet extends JPanel
 	    
 	}
     }
-    /*
-      public class Node implements Serializable
-      {
-      public String bookName;
-      public URL bookURL;
-      public String prefix = "file:" 
-      + System.getProperty("user.dir")
-      + System.getProperty("file.separator");
-      public Node(String book, String filename) {
-      bookName = book;
-      try {
-      bookURL = new URL(prefix + filename);
-      } catch (java.net.MalformedURLException exc) {
-      System.err.println("Attempted to create a BookInfo "
-      + "with a bad URL: " + bookURL);
-      bookURL = null;
-      }
-      }
-      
-      public String toString() {
-      return bookName;
-      }}
-    */
+   
 	public class newNode extends JFrame
 	{
 	    private JTextField nom;

@@ -7,6 +7,7 @@
 package ihm;
 
 import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 
 /**
  * @author 210
@@ -16,6 +17,10 @@ import javax.swing.JPanel;
  */
 public class GraphicsPainter extends JPanel
 {
+	private JSplitPane principal;
+	private JB
+	
+	
 
 	public static void main(String[] args)
 	{
