@@ -1,0 +1,25 @@
+<project name="javaLab" default="all" basedir=".">
+	<property name="edu" location="edu"/>
+	<property name="dessif" location="edu/dessif"/>
+	<property name="bin_dir" location="build"/>
+	<property name="fold_jar" location="jar"/>
+	
+	<target name="init">
+		<tstamp/>
+		<mkdir dir="${bin_dir}"/>
+		<mkdir dir="${fold_jar}"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="${dessif}" destdir="${bin_dir}" fork="true" />
+	</target>
+
+	<target name="jar" depends="compile">
+    	<jar destfile="${fold_jar}/administration.jar" basedir="${bin_dir}"/>
+	</target>
+
+	<target name="all" depends="jar">
+    	<java classname="edu.dessif.administration" classpath="${dessif}/administration.jar" fork="true" />
+	</target>
+
+</project>
