@@ -8,9 +8,24 @@ class MyModel extends AbstractTableModel{
 		type  x  y  w  h  width  color  depth
 		----  ----------   ---    ---    ---
 		rect	double	  double color   int
-		ellipse
+		ellipse			du trait		ordre d'apparition
+										sur l'ecran
 		*/
+	}
 	public int getRowCount(){ return shapes.size(); }
+	public Object getValueAt(int row, int col)
+	{
+		MyShape shape = (MyShape)shapes.get(row);
+		switch(col){
+			case 0: return(shape.getType());...
+		}
+	}
 	
+}
+
+
+class MyShape extends RectangularShape{
+	....
+}
 	
 	
