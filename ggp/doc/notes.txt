@@ -27,7 +27,7 @@ class MyModel extends AbstractTableModel{
 }
 
 
-class MyShape extends RectangularShape{
+abstract class MyShape extends RectangularShape{
 	public MyShape(int type, double
 }
 	

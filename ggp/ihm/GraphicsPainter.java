@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
 /**
- * @author 210
+ * @author ggp
  *
  * To change the template for this generated type comment go to
  * Window - Preferences - Java - Code Generation - Code and Comments
@@ -18,8 +18,8 @@ import javax.swing.JSplitPane;
 public class GraphicsPainter extends JPanel
 {
 	private JSplitPane principal;
-	private JB
-	
+	private JPanel _top = new JPanel(); 
+	private JPanel _bottom = new JPanel();
 	
 
 	public static void main(String[] args)

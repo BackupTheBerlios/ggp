@@ -28,7 +28,7 @@ public class Projet extends JPanel
 	// création des panels qui vont être affichés à droite et à gauche (resp Infos et JEditorPane) 
         
         treePane = new DynamicTree("IUP");
-	htmlPane = new JEditorPane();
+        htmlPane = new JEditorPane();
         treePane.tree.addTreeSelectionListener(select);
 	
 	
