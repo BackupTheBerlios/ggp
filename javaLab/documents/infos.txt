@@ -1,0 +1,16 @@
+Site cvs : https://developer.berlios.de/
+
+Pour se connecter au projet à travers CVS de Berlios.de :
+
+clic droit sur le projet
+team > share project
+
+params :
+	host = cvs.nomProjet.Berlios.de
+	Repository = /cvsroot/nomProjet
+	user = ggomezpe
+	pwd = "patrick"
+	connection = extssh
+
+Attention !!! Il faut authoriser la connection ssh2 dans windows > preferences > Team > cvs > ssh2 ....
+et cocher la case ad hoc
