@@ -27,10 +27,18 @@ class MyModel extends AbstractTableModel{
 }
 
 
-abstract class MyShape extends RectangularShape{
-	public MyShape(int type, double
+interface MyShape {
+	public int getLineWidth();
+	public Color getLineColor();
 }
-	
+class MyRectangle extends Rectangle2D.Double implements MyShape{
+	public MyRectangle(double x,y,w,h,lineWidth,Color lineColor){
+		super(x,y,w,h);
+		this.lineWidth=lineWidth;
+		this.lineColor=lineColor;
+	}
+	public int getLineWidth(){ return lineWidth; }
+}
 	
 	
 	
@@ -42,3 +50,13 @@ abstract class MyShape extends RectangularShape{
     p.add(new Button("Okay"), BorderLayout.SOUTH);	
 	
 	
+	Model = shapes
+	Vue   = Frame
+	Controler = MyModel(will)
+	
+	JSLider -> reglette pour le zoom
+	
+	
+// à envoyer
+buisson@enseeiht.fr
+à rendre la semaine de la rentrée
